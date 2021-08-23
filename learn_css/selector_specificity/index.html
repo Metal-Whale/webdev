@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors Specificity</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <section id="featured">
+      <h1 id="products" class="highlight">Selectors Specificity</h1>
+      <article>
+        <p>
+          Each selector has a specificity/weight. If multiple rules target the
+          same element the browser will apply the rule that is more specific
+        </p>
+        <h2>Specificity Order</h2>
+        <ul>
+          <li>ID Selector Ex. #products</li>
+          <li>Class & attribute selectors Ex. .products</li>
+          <li>Element selector Ex. section</li>
+        </ul>
+      </article>
+      <article>
+        <p>Based on selector hiearchy,Which color will be used?</p>
+        <ul>
+          <li>h1 { color: dodgerblue; }</li>
+          <li>.highlight { color: deeppink; }</li>
+          <li>Item 3</li>
+        </ul>
+        <p>
+          Pink will be used because the class selector is more specific and
+          therefore carries more weight.
+        </p>
+        <p>
+          What if you have two selectors with equal specificty/weight? The
+          browser will use the selector that is at the end of the css
+          code/stylesheet.
+        </p>
+        <p>
+          If you hover over the element selector h1 in your css code you will
+          see "Selector Specificity:(0,0,1)", ID Selector, Class, Element
+        </p>
+        <p>How do we stop this rule from overriding the style?</p>
+        <ul>
+          <li>1. Use the Important keyword</li>
+          <mark>
+            <p>
+              This should be avoided Ex. h1 { color: dodgerblue !important; }
+            </p>
+          </mark>
+          <li>2.</li>
+        </ul>
+      </article>
+    </section>
+  </body>
+</html>

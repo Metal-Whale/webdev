@@ -1,0 +1,65 @@
+body {
+  margin: 10px;
+}
+
+.product {
+  color: green;
+}
+
+a[target="_blank"] {
+  color: orange;
+}
+
+a[href*="google"] {
+  color: blue;
+}
+
+a[href^="https"][href$=".com"] {
+  color: magenta;
+}
+
+#products p {
+  color: orange;
+}
+
+article :first-child {
+  font-size: 140%;
+  font-style: italic;
+}
+
+article :first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
+
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+a:visited,
+a:link {
+  color: dodgerblue;
+}
+
+a:hover,
+a:focus {
+  color: deeppink;
+}
+
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+::selection {
+  background-color: pink;
+}
+
+p::before {
+  content: "...";
+  display: block;
+}
+
+p::after {
+  content: "...";
+}

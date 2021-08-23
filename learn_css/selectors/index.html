@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <h1>Basic Selectors</h1>
+    <section>
+      <ul>
+        <li>Type</li>
+        <p>
+          You can select an element by its type For Ex. body { margine: 10px;}
+        </p>
+        <li>ID</li>
+        <p>We cannot have multiple elements with the same ID</p>
+        <li>Class</li>
+        <p>We can have multiple elements with the same class</p>
+        <li>Attribute</li>
+        <p>Selecting elements by their attribute is not common</p>
+        <ul>
+          <li>
+            Checking for the existence of of target attribute. The value doesn't
+            matter. However, we can be more explicit about the value For Ex.
+            a[target="_blank"] {color: orange;}
+          </li>
+          <li>
+            Selecting by Anchor Attribute a[href*="google"] {color: blue;}
+          </li>
+          <li>
+            Selecting by Anchor Attribute that begins ^= or ends &= with a given
+            value. For Ex. a[href^="https"][href$=".com"] {color: magenta;}
+          </li>
+        </ul>
+      </ul>
+      <p>
+        <mark>
+          Zen Coding: You can type section#products as a shortcut to produce a
+          section tab with a "products" id
+        </mark>
+      </p>
+      <a href="https://google.com" target="_blank">Google</a>
+      <a href="https://yahoo.com" target="_blank">Yahoo</a>
+    </section>
+
+    <section id="products">
+      <h1>Relational Selectors</h1>
+      <p>
+        You can select elements based on their relationship with other elements.
+        For Ex. #products p { color: orange; } This approach combines two
+        different selectors products and p. This is called a descendent
+        selector. This rule will apply to any paragraph within the products
+        section.
+      </p>
+      <a href="https://www.w3schools.com/css/css_combinators.asp"
+        >W3Schools Reference</a
+      >
+      <ul>
+        <li>Descendent Selector: #products p { color: orange; }</li>
+        <li>Parent Selector: #products > p { color: orange; }</li>
+        <li>Inherited Selector: #products + p { color: orange; }</li>
+        <li>#products + p { color: orange; }</li>
+      </ul>
+      <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Pseudo-Class Selectors</h2>
+        <a href=" <h2>Pseudo-Class Selectors</h2>">W3Schools Reference</a>
+        <p class="first">
+          We do not have to use a paragraph class such as p class='first"
+          Because the browser automatically applies pseudo classes by default.
+        </p>
+        <p>EX. article :first-child { font-size: 140%; font-style: italic; }</p>
+        <mark>
+          <p>Zen Coding: ul>li*5 {Item $} generates a list with 5 items</p>
+        </mark>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Pseudo-Element Selectors</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          voluptatum ipsam blanditiis. Laudantium ut, cupiditate fugiat eveniet
+          maiores fugit voluptatibus aperiam numquam, aut, natus dolorem eos!
+          Facilis iste ducimus perferendis aperiam veniam modi beatae eveniet
+          enim. Quaerat, odio. Eveniet dignissimos ipsam quisquam totam
+          excepturi. Sit repellendus maiores exercitationem provident quibusdam?
+        </p>
+      </article>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+#products {
+  color: green;
+}
+
+.highlight#products {
+  color: deeppink;
+}
+
+h1#products {
+  color: dodgerblue;
+}
+
+.featured#products {
+  color: dodgerblue;
+}
