@@ -1,0 +1,39 @@
+body {
+    margin: 10px;
+    height: 200vh
+}
+
+.boxes {
+    border: 3px solid lightgrey;
+    position: relative;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-one {
+    background: gold;
+}
+
+.box-two {
+    background: tomato;
+    position: fixed;
+    top: 0;
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    z-index: 999999;
+    /*position: relative*/
+    /*default position is static*/
+   /* left: 4rem;*/
+    /* Negative Values can push the box off the screen*/
+   /* bottom: 4rem;*/
+    /*This effects the depth of the element*/
+    /*This allows the red box 1 two be on top of box two*/
+}
+
+.box-three {
+    background: dodgerblue;
+}
