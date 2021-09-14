@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-</head>
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="box">A</div>
-        <div class="box">B</div>
-        <div class="box">C</div>
-        <div class="box">D</div>
+      <div class="box box-one">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box box-four">D</div>
     </div>
-</body>
 
+    <span>
+      <h2>Aligning Items</h2>
+      <ul>
+        <li>justify-items (along the horizontal axis)</li>
+        <li>align-items(along the vertical axis)</li>
+        <li>align-content: for vertical alignment</li>
+        <li>Content: represents the entire grid</li>
+        <li>
+          Items: represents individual items in the grid.The default value of
+          items is Stretch, which will stretch to fit their containing cell as
+          long as height and width are not explicitly defined.
+        </li>
+      </ul>
+      <h2>GAP</h2>
+      <ul>
+        <li>row-gap</li>
+        <li>column-gap</li>
+        <li>gap</li>
+      </ul>
+      <h2>Placing Items</h2>
+      <ul>
+        <li>grid-row</li>
+        <li>grid-column</li>
+        <li>grid-area</li>
+      </ul>
+      <h2>Placing Items in Named Ares</h2>
+      <ul>
+        <li>grid-template-areas</li>
+        <li>grid-area</li>
+      </ul>
+    </span>
+  </body>
 </html>
